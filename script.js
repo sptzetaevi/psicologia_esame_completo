@@ -1,0 +1,1 @@
+document.querySelectorAll('.flash').forEach(c=>c.addEventListener('click',()=>c.classList.toggle('flip')));
