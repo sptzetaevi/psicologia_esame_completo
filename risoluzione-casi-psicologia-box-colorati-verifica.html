@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risoluzione casi - Psicologia IP02</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --text:#1f2937;
+      --blue:#dbeafe; --blue-border:#2563eb;
+      --green:#dcfce7; --green-border:#16a34a;
+      --yellow:#fef9c3; --yellow-border:#ca8a04;
+      --orange:#ffedd5; --orange-border:#ea580c;
+      --red:#fee2e2; --red-border:#dc2626;
+      --purple:#f3e8ff; --purple-border:#9333ea;
+      --violet:#ede9fe; --violet-border:#7c3aed;
+      --primary:#1d4ed8;
+      --primary-dark:#1e40af;
+      --border:#dbe3f0;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Arial,Verdana,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.75;
+      font-size:1.1rem;
+    }
+
+    header{
+      background:linear-gradient(135deg,#1d4ed8,#2563eb);
+      color:white;
+      padding:2rem 1rem;
+      text-align:center;
+    }
+
+    header h1{margin:0;font-size:2rem}
+    header p{max-width:1000px;margin:1rem auto 0;font-size:1.15rem}
+
+    nav{
+      max-width:1100px;
+      margin:1.5rem auto;
+      padding:0 1rem;
+      display:flex;
+      flex-wrap:wrap;
+      gap:.8rem;
+      justify-content:center;
+    }
+
+    nav a,.home-link{
+      display:inline-block;
+      text-decoration:none;
+      background:var(--primary);
+      color:white;
+      padding:.8rem 1rem;
+      border-radius:12px;
+      font-weight:bold;
+    }
+
+    nav a:hover,.home-link:hover{background:var(--primary-dark)}
+
+    main{
+      max-width:1050px;
+      margin:0 auto 3rem;
+      padding:0 1rem;
+    }
+
+    section{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:20px;
+      padding:1.4rem;
+      margin-bottom:1.6rem;
+      box-shadow:0 8px 20px rgba(15,23,42,.06);
+    }
+
+    h2{
+      color:var(--primary-dark);
+      margin-top:0;
+      font-size:1.7rem;
+    }
+
+    h3{
+      color:#111827;
+      margin-top:1.4rem;
+      font-size:1.35rem;
+    }
+
+    .trace{
+      background:var(--violet);
+      border-left:8px solid var(--violet-border);
+      padding:1rem;
+      border-radius:14px;
+      margin:1rem 0 1.3rem;
+    }
+
+    .box{
+      padding:1rem;
+      border-radius:14px;
+      margin:1rem 0;
+      border-left:8px solid;
+    }
+
+    .problem{background:var(--blue);border-color:var(--blue-border)}
+    .needs{background:var(--green);border-color:var(--green-border)}
+    .services{background:var(--yellow);border-color:var(--yellow-border)}
+    .operator{background:var(--orange);border-color:var(--orange-border)}
+    .goals{background:var(--red);border-color:var(--red-border)}
+    .evaluation{background:var(--purple);border-color:var(--purple-border)}
+
+    .box h4,.trace h4{
+      margin:.1rem 0 .5rem;
+      font-size:1.15rem;
+      color:#111827;
+    }
+
+    .legend{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+      gap:.8rem;
+      margin:1rem 0;
+    }
+
+    .legend div{
+      padding:.8rem;
+      border-radius:12px;
+      font-weight:bold;
+    }
+
+    ul{padding-left:1.3rem}
+    li{margin-bottom:.35rem}
+
+    footer{
+      text-align:center;
+      padding:2rem 1rem;
+      color:#4b5563;
+    }
+
+    @media(max-width:600px){
+      body{font-size:1rem}
+      header h1{font-size:1.55rem}
+      section{padding:1rem}
+      nav{flex-direction:column}
+      nav a{text-align:center}
+    }
+
+    @media print{
+      nav,.home-link,footer{display:none}
+      body{background:white;font-size:12pt}
+      section{box-shadow:none;border:1px solid #ccc;page-break-inside:avoid}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Risoluzione di casi - Psicologia</h1>
+  <p>Seconda prova IP02 - Servizi Socio-Sanitari. Le tracce sono riscritte in modo accessibile, ma restano fedeli al significato originale. Le risposte sono divise in box colorati, compresa la valutazione finale per aiutare a costruire lo svolgimento.</p>
+</header>
+
+<nav>
+  <a href="#legenda">Legenda</a>
+  <a href="#t1">Angela</a>
+  <a href="#t2">Autismo</a>
+  <a href="#t3">Dipendenze</a>
+  <a href="#t4">RSA</a>
+  <a href="#t5">Alzheimer</a>
+  <a href="#t6">Anziano solo</a>
+  <a href="index.html">Torna alla HOME</a>
+</nav>
+
+<main>
+<section id="legenda">
+  <h2>Legenda dei colori</h2>
+  <div class="legend">
+    <div class="problem">🟦 Presentazione del problema</div>
+    <div class="needs">🟩 Analisi dei bisogni e delle difficoltà</div>
+    <div class="services">🟨 Intervento dei servizi</div>
+    <div class="operator">🟧 Ruolo dell'operatore socio-sanitario</div>
+    <div class="goals">🟥 Obiettivi e progetto futuro</div>
+    <div class="evaluation">🟪 Valutazione e verifica</div>
+  </div>
+</section>
+
+<section id="t1">
+  <h2>Traccia 1 - Angela, ragazza madre</h2>
+  <div class="trace">
+    <h4>Traccia semplificata</h4>
+    <p>Angela è una ragazza con un passato difficile. In famiglia ha vissuto maltrattamenti. In adolescenza ha avuto comportamenti difficili. Questi comportamenti potevano sembrare ribellione o devianza. Per questo non sempre gli adulti hanno capito i suoi veri bisogni.</p>
+    <p>Angela è diventata madre molto presto. Quando è nato il bambino aveva solo 13 anni. Ora il bambino ha un anno e quattro mesi. Angela non ha ripreso la scuola. Il padre del bambino è il suo fidanzato. Angela lo vede solo in momenti stabiliti dagli assistenti sociali.</p>
+    <p>Analizza la situazione. Spiega le difficoltà psicologiche e relazionali di Angela con il bambino. Proponi un intervento psicologico e sociale. Descrivi un possibile progetto per Angela e per suo figlio nel breve e nel medio periodo.</p>
+  </div>
+  <div class="box problem"><h4>🟦 Presentazione del problema</h4><p>Angela è una ragazza molto giovane. Ha avuto un'infanzia difficile. Ha vissuto maltrattamenti in famiglia. Questo può avere lasciato ferite emotive. Angela è diventata madre a tredici anni. Quindi vive due ruoli insieme. È ancora adolescente. Ma deve anche occuparsi di un bambino piccolo.</p></div>
+  <div class="box needs"><h4>🟩 Analisi dei bisogni e delle difficoltà</h4><p>Angela può sentirsi insicura. Può avere paura di sbagliare. Può fare fatica a capire i bisogni del bambino. Il bambino ha bisogno di affetto, protezione e stabilità. Ha bisogno di una figura adulta affidabile. Anche Angela ha bisogno di essere sostenuta. Non deve essere giudicata. Deve essere aiutata a diventare madre in modo più sicuro.</p></div>
+  <div class="box services"><h4>🟨 Intervento dei servizi</h4><p>Serve un lavoro di rete. Gli assistenti sociali possono seguire la situazione. Possono controllare il benessere del bambino. Lo psicologo può aiutare Angela a parlare della sua storia e delle sue emozioni. Un educatore può aiutarla nella cura quotidiana del figlio. Anche la scuola deve essere coinvolta, perché Angela ha interrotto il percorso scolastico.</p></div>
+  <div class="box operator"><h4>🟧 Ruolo dell'operatore socio-sanitario</h4><p>L'operatore deve osservare la relazione tra Angela e il bambino. Deve ascoltare senza giudicare. Può aiutare Angela nelle routine quotidiane. Può rinforzare i comportamenti positivi. Può segnalare all'équipe eventuali difficoltà. Deve usare empatia, rispetto e riservatezza.</p></div>
+  <div class="box goals"><h4>🟥 Obiettivi e progetto futuro</h4><p>Nel breve periodo bisogna proteggere il bambino e sostenere Angela. Bisogna aiutarla a sentirsi meno sola. Nel medio periodo bisogna favorire il ritorno a scuola, l'autonomia personale e un progetto di vita. Angela deve poter crescere come madre, ma anche come persona.</p></div>
+  <div class="box evaluation"><h4>🟪 Valutazione e verifica</h4><p>Il raggiungimento degli obiettivi può essere verificato osservando alcuni cambiamenti concreti. Si può valutare se Angela riesce a rispondere meglio ai bisogni del bambino. Si può osservare se il bambino appare più sereno e curato. Si può verificare se Angela partecipa agli incontri con i servizi e se riprende gradualmente la scuola.</p><p>Le modalità di verifica possono essere colloqui periodici con Angela, osservazioni della relazione madre-bambino, incontri di équipe, relazioni degli educatori e confronto con la scuola. È utile fissare verifiche a breve distanza, per esempio ogni mese, e poi verifiche più ampie dopo alcuni mesi.</p></div>
+</section>
+
+<section id="t2">
+  <h2>Traccia 2 - Bambino con Disturbo dello Spettro Autistico</h2>
+  <div class="trace">
+    <h4>Traccia semplificata</h4>
+    <p>La nascita di un figlio con disabilità può provocare emozioni molto forti nei genitori. I genitori possono provare disperazione, rabbia, senso di impotenza e solitudine. Queste emozioni possono durare poco, ma a volte possono durare molto tempo.</p>
+    <p>Immagina il caso di un bambino con Disturbo dello Spettro Autistico inserito nella scuola primaria. Analizza l'impatto emotivo e psicologico della disabilità sulla famiglia. Spiega anche quali linee guida possono essere utilizzate per costruire un piano educativo e riabilitativo integrato.</p>
+  </div>
+  <div class="box problem"><h4>🟦 Presentazione del problema</h4><p>Il bambino ha un Disturbo dello Spettro Autistico. È inserito nella scuola primaria. L'autismo può creare difficoltà nella comunicazione, nella relazione e nella gestione della quotidianità. Ogni bambino però è diverso. Per questo si parla di spettro.</p></div>
+  <div class="box needs"><h4>🟩 Analisi dei bisogni e delle difficoltà</h4><p>Il bambino può avere difficoltà a comunicare. Può avere difficoltà a giocare con i compagni. Può avere bisogno di routine stabili. La famiglia può sentirsi sola e stanca. I genitori possono avere paura del futuro. Possono non sapere come gestire alcuni comportamenti.</p></div>
+  <div class="box services"><h4>🟨 Intervento dei servizi</h4><p>Serve un'équipe. Possono collaborare neuropsichiatra infantile, psicologo, logopedista, educatore, insegnanti, insegnante di sostegno e famiglia. Il progetto deve essere condiviso. Deve avere obiettivi chiari. Può lavorare su comunicazione, autonomie, relazione con i pari e partecipazione scolastica.</p></div>
+  <div class="box operator"><h4>🟧 Ruolo dell'operatore socio-sanitario</h4><p>L'operatore può aiutare nella gestione delle autonomie. Può osservare i comportamenti. Può aiutare il bambino nelle routine. Può usare immagini, schemi visivi e consegne semplici. Deve collaborare con famiglia, scuola e servizi.</p></div>
+  <div class="box goals"><h4>🟥 Obiettivi e progetto futuro</h4><p>L'obiettivo non è rendere il bambino uguale agli altri. L'obiettivo è migliorare la qualità della vita. Bisogna favorire comunicazione, partecipazione, autonomia e benessere familiare. La scuola deve essere un ambiente inclusivo e prevedibile.</p></div>
+  <div class="box evaluation"><h4>🟪 Valutazione e verifica</h4><p>Gli obiettivi possono essere valutati osservando se il bambino comunica di più, partecipa maggiormente alle attività e vive meno situazioni di crisi. Si può verificare se riesce a seguire alcune routine, se aumenta l'autonomia e se migliora la relazione con i compagni.</p><p>Le verifiche possono avvenire attraverso osservazioni in classe, griglie semplici, incontri tra scuola, famiglia e servizi, aggiornamento del PEI e confronto con gli specialisti. È importante valutare anche il benessere della famiglia, perché il progetto riguarda il bambino ma anche il suo contesto di vita.</p></div>
+</section>
+
+<section id="t3">
+  <h2>Traccia 3 - Marco e la tossicodipendenza</h2>
+  <div class="trace">
+    <h4>Traccia semplificata</h4>
+    <p>Marco ha 22 anni. Ha una storia complessa legata all'uso prolungato di sostanze stupefacenti. Si è isolato. Ha perso il lavoro. La famiglia è molto stanca a causa dei conflitti e del peggioramento della sua salute.</p>
+    <p>Marco non vuole farsi aiutare. Ha sbalzi d'umore. A volte sembra depresso. Non mostra motivazione al cambiamento.</p>
+    <p>Analizza la tossicodipendenza dal punto di vista psicologico e relazionale. Spiega i concetti di negazione, tolleranza e astinenza. Proponi un percorso con il Ser.D e con le strutture del territorio. Spiega il ruolo dell'operatore socio-sanitario nella relazione di aiuto.</p>
+  </div>
+  <div class="box problem"><h4>🟦 Presentazione del problema</h4><p>Marco è un giovane adulto. Usa sostanze da molto tempo. La dipendenza ha creato problemi nella sua vita. Ha perso il lavoro. Si è isolato. Ha conflitti con la famiglia. La sua salute è peggiorata.</p></div>
+  <div class="box needs"><h4>🟩 Analisi dei bisogni e delle difficoltà</h4><p>Marco nega il problema. Non è motivato al cambiamento. Questo è frequente nelle dipendenze. La tolleranza porta a usare quantità maggiori di sostanza. L'astinenza provoca ansia, irritabilità, insonnia e forte desiderio della sostanza. Anche la famiglia ha bisogno di aiuto, perché è molto stanca.</p></div>
+  <div class="box services"><h4>🟨 Intervento dei servizi</h4><p>Il servizio principale è il Ser.D. Il Ser.D può fare una valutazione. Può proporre colloqui, trattamento medico, sostegno psicologico e interventi educativi. Se la situazione è grave, può essere utile una comunità terapeutica. La famiglia può essere coinvolta nel percorso.</p></div>
+  <div class="box operator"><h4>🟧 Ruolo dell'operatore socio-sanitario</h4><p>L'operatore deve costruire una relazione di fiducia. Non deve giudicare Marco. Deve ascoltarlo. Deve sostenerlo nelle attività quotidiane. Può aiutare Marco a individuare piccoli obiettivi. Può osservare i cambiamenti e comunicarli all'équipe.</p></div>
+  <div class="box goals"><h4>🟥 Obiettivi e progetto futuro</h4><p>L'obiettivo non è solo smettere di usare sostanze. L'obiettivo è costruire una vita diversa. Marco deve recuperare salute, relazioni, autonomia e motivazione. Nel tempo può pensare anche al reinserimento lavorativo.</p></div>
+  <div class="box evaluation"><h4>🟪 Valutazione e verifica</h4><p>Il percorso può essere valutato osservando se Marco partecipa agli incontri con il Ser.D, se riduce l'uso di sostanze e se accetta gradualmente l'aiuto. Si può valutare anche se migliora il rapporto con la famiglia, se rispetta gli impegni e se mostra una maggiore motivazione al cambiamento.</p><p>Le modalità di verifica possono essere colloqui individuali, controlli sanitari, incontri di équipe, osservazioni degli operatori e confronto con la famiglia. Se Marco entra in comunità, saranno importanti anche le relazioni della comunità terapeutica e la verifica del progetto riabilitativo.</p></div>
+</section>
+
+<section id="t4">
+  <h2>Traccia 4 - L'anziano in RSA e la perdita di autonomia</h2>
+  <div class="trace">
+    <h4>Traccia semplificata</h4>
+    <p>Oggi le persone vivono più a lungo. Per questo aumenta il numero di anziani che non riescono più a vivere da soli. Alcuni perdono autonomia fisica o psicologica. Altri sono soli. Per questi motivi possono entrare in una RSA.</p>
+    <p>L'ingresso in RSA può essere difficile. L'anziano lascia la propria casa, le proprie abitudini e i propri punti di riferimento. Può vivere tristezza, paura e senso di sradicamento. Può anche comparire il rischio di istituzionalizzazione, cioè la perdita dell'identità personale a favore delle routine della struttura.</p>
+    <p>Analizza le reazioni dell'anziano e della famiglia. Spiega le strategie comunicative dell'operatore. Proponi un PAI con attività di animazione e stimolazione cognitiva.</p>
+  </div>
+  <div class="box problem"><h4>🟦 Presentazione del problema</h4><p>Un anziano non autosufficiente entra in RSA. Questo passaggio è delicato. L'anziano lascia la casa e le sue abitudini. Può sentirsi triste, spaesato o abbandonato. Può avere paura di perdere la propria identità.</p></div>
+  <div class="box needs"><h4>🟩 Analisi dei bisogni e delle difficoltà</h4><p>L'anziano ha bisogno di sicurezza, accoglienza e rispetto. Ha bisogno di mantenere alcuni legami con la propria storia. Anche la famiglia può soffrire. I familiari possono sentirsi in colpa, ma anche sollevati perché non riuscivano più a gestire la situazione.</p></div>
+  <div class="box services"><h4>🟨 Intervento dei servizi</h4><p>La struttura deve costruire un Piano Assistenziale Individualizzato, cioè un PAI. Il PAI deve indicare bisogni, risorse, obiettivi, attività e verifiche. Le attività possono essere animazione, musica, lettura, ginnastica dolce, laboratori manuali e giochi di memoria.</p></div>
+  <div class="box operator"><h4>🟧 Ruolo dell'operatore socio-sanitario</h4><p>L'operatore deve accogliere l'anziano con calma. Deve presentarsi. Deve spiegare gli spazi e le routine. Deve ascoltare le paure. Deve evitare di trattare l'anziano come un bambino. Deve rispettare la sua storia e la sua dignità.</p></div>
+  <div class="box goals"><h4>🟥 Obiettivi e progetto futuro</h4><p>L'obiettivo è favorire l'adattamento alla RSA. Bisogna evitare l'isolamento e la passività. Bisogna mantenere le capacità residue. Bisogna sostenere il benessere dell'anziano e il rapporto con la famiglia.</p></div>
+  <div class="box evaluation"><h4>🟪 Valutazione e verifica</h4><p>Il raggiungimento degli obiettivi può essere valutato osservando se l'anziano partecipa alla vita della struttura, se accetta meglio le routine e se mostra meno segnali di tristezza o isolamento. Si può verificare anche se mantiene alcune autonomie, come mangiare, vestirsi o partecipare ad attività semplici.</p><p>Le verifiche possono avvenire attraverso l'aggiornamento del PAI, osservazioni quotidiane degli operatori, colloqui con i familiari, riunioni di équipe e schede di monitoraggio. È utile valutare anche il tono dell'umore, la partecipazione alle attività e il mantenimento delle capacità residue.</p></div>
+</section>
+
+<section id="t5">
+  <h2>Traccia 5 - Alzheimer e supporto al caregiver</h2>
+  <div class="trace">
+    <h4>Traccia semplificata</h4>
+    <p>Il signor Giovanni ha 78 anni. Ha il morbo di Alzheimer in fase intermedia. Vive a casa con la moglie Maria. Maria è la sua caregiver principale, cioè la persona che si occupa di lui ogni giorno.</p>
+    <p>Negli ultimi mesi Maria è molto stanca. Ha stress, disturbi del sonno e ansia. Questi segnali fanno pensare al caregiver burnout. Giovanni presenta anche comportamenti difficili, come vagabondaggio notturno e aggressività verbale.</p>
+    <p>Analizza i bisogni di Giovanni e di Maria. Descrivi i servizi territoriali da attivare, come Centro Diurno e Assistenza Domiciliare Integrata. Spiega il ruolo dell'operatore nella gestione dei comportamenti problematici a domicilio.</p>
+  </div>
+  <div class="box problem"><h4>🟦 Presentazione del problema</h4><p>Giovanni ha l'Alzheimer in fase intermedia. Vive a casa con la moglie. Maria si occupa di lui ogni giorno. La situazione è diventata difficile, perché Giovanni ha comportamenti problematici e Maria è molto stanca.</p></div>
+  <div class="box needs"><h4>🟩 Analisi dei bisogni e delle difficoltà</h4><p>Giovanni ha bisogno di sicurezza, routine, assistenza e stimolazione. Maria ha bisogno di riposo, sostegno e informazioni. Il suo stress può diventare caregiver burnout. Se Maria crolla, anche Giovanni rischia di non ricevere cure adeguate.</p></div>
+  <div class="box services"><h4>🟨 Intervento dei servizi</h4><p>Si può attivare l'Assistenza Domiciliare Integrata. L'ADI porta a casa interventi sanitari e assistenziali. Può essere utile anche un Centro Diurno Integrato. Il centro diurno accoglie Giovanni durante la giornata e offre attività di stimolazione e socializzazione.</p></div>
+  <div class="box operator"><h4>🟧 Ruolo dell'operatore socio-sanitario</h4><p>L'operatore aiuta nelle attività quotidiane. Osserva i comportamenti di Giovanni. Usa un tono calmo. Non lo contraddice in modo brusco. Aiuta a mantenere routine semplici. Sostiene anche Maria con ascolto e indicazioni pratiche.</p></div>
+  <div class="box goals"><h4>🟥 Obiettivi e progetto futuro</h4><p>L'obiettivo è migliorare la qualità della vita di entrambi. Giovanni deve essere più sicuro e stimolato. Maria deve avere momenti di sollievo. Il progetto deve evitare l'isolamento e ridurre il carico familiare.</p></div>
+  <div class="box evaluation"><h4>🟪 Valutazione e verifica</h4><p>Gli obiettivi possono essere valutati osservando se Giovanni è più tranquillo, se diminuiscono il vagabondaggio notturno e l'aggressività verbale, e se riesce a mantenere alcune routine. Si valuta anche se Maria dorme meglio, appare meno ansiosa e riesce ad avere momenti di riposo.</p><p>Le modalità di verifica possono essere diario domiciliare, colloqui con Maria, osservazioni dell'operatore, incontri con il medico e con l'équipe, controllo dell'andamento dell'ADI e del Centro Diurno. È importante verificare periodicamente se il carico assistenziale della moglie si è ridotto.</p></div>
+</section>
+
+<section id="t6">
+  <h2>Traccia 6 - L'anziano solo sul territorio</h2>
+  <div class="trace">
+    <h4>Traccia semplificata</h4>
+    <p>La solitudine e l'isolamento sociale sono fattori di rischio per gli anziani. Possono favorire problemi fisici e psicologici. Molti anziani che vivono soli, soprattutto dopo un lutto o dopo il pensionamento, riducono i contatti con l'esterno.</p>
+    <p>Immagina di collaborare alla progettazione di un servizio territoriale di custodia sociale e animazione territoriale. Il servizio è promosso dal Comune e dai servizi sociali. Serve a contrastare l'isolamento degli anziani del quartiere.</p>
+    <p>Analizza il fenomeno della solitudine nella terza età. Indica gli obiettivi del progetto. Proponi attività pratiche, come laboratori di memoria, telefonia sociale e incontri intergenerazionali.</p>
+  </div>
+  <div class="box problem"><h4>🟦 Presentazione del problema</h4><p>Molti anziani vivono soli. Alcuni hanno perso il coniuge. Altri hanno figli lontani. Altri hanno smesso di lavorare e hanno perso molte relazioni quotidiane. La solitudine può diventare isolamento.</p></div>
+  <div class="box needs"><h4>🟩 Analisi dei bisogni e delle difficoltà</h4><p>L'anziano solo ha bisogno di essere visto e ascoltato. Ha bisogno di relazioni. Ha bisogno di sentirsi ancora parte della comunità. L'isolamento può aumentare tristezza, ansia, depressione e perdita di autonomia.</p></div>
+  <div class="box services"><h4>🟨 Intervento dei servizi</h4><p>Il Comune e i servizi sociali possono attivare un progetto di custodia sociale. Il progetto può coinvolgere operatori, volontari, associazioni, centri anziani, scuole e farmacie. Serve a monitorare gli anziani fragili e a prevenire il disagio.</p></div>
+  <div class="box operator"><h4>🟧 Ruolo dell'operatore socio-sanitario</h4><p>L'operatore deve osservare e ascoltare. Deve creare fiducia. Può fare telefonate periodiche. Può partecipare a visite domiciliari leggere. Può aiutare l'anziano a collegarsi ai servizi e alle attività del territorio.</p></div>
+  <div class="box goals"><h4>🟥 Obiettivi e progetto futuro</h4><p>Gli obiettivi sono ridurre la solitudine, favorire la partecipazione e prevenire il disagio. Le attività possono essere laboratori di memoria, incontri intergenerazionali, passeggiate di gruppo, feste di quartiere e telefonia sociale.</p></div>
+  <div class="box evaluation"><h4>🟪 Valutazione e verifica</h4><p>Il progetto può essere valutato osservando se gli anziani partecipano di più alle attività del quartiere, se rispondono alle telefonate sociali e se accettano con maggiore fiducia il contatto con gli operatori. Si può verificare anche se diminuiscono le situazioni di isolamento e se aumentano le relazioni.</p><p>Le modalità di verifica possono essere registri delle presenze, schede di osservazione, colloqui con gli anziani, questionari semplici di gradimento, incontri con volontari e servizi sociali. È utile controllare periodicamente quanti anziani vengono raggiunti dal progetto e quali bisogni emergono.</p></div>
+</section>
+
+<p style="text-align:center"><a class="home-link" href="index.html">Torna alla HOME</a></p>
+</main>
+
+<footer>Materiale semplificato per il ripasso della seconda prova di Psicologia.</footer>
+</body>
+</html>
